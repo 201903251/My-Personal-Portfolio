@@ -57,12 +57,13 @@ h2 {
 .menu {
     list-style: none;
     font-family: 'Courgette', cursive;
-    position: absolute;
+    position: fixed;
     top: 0;
     margin-top: 0px;
     background-color: white;
     z-index: 10;
     cursor: pointer;
+    width: 100%;
 }
 
 .links {
@@ -81,4 +82,42 @@ h2 {
 #videos {
     background-color: aqua;
     text-align: center;
+}
+
+#apps {
+    background-color: blue;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+#chatbot {
+    background-color: darkgray;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+#games {
+    background-color: coral;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+#game1,
+#game2 {
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: transform .2s;
+}
+
+#game1:hover {
+    transform: scale(0.9);
+}
+
+#game2:hover {
+    transform: scale(0.9);
 }
